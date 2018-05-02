@@ -4,14 +4,13 @@
   tags:
     - package
   package:
-    name: "{{ item }}"
     state: absent
     purge: yes
-  with_items:
-    - cron
-    - mcron
-    - anacron
-    - at
+    name:
+      - cron
+      - mcron
+      - anacron
+      - at
 
 - name: systemd-cron | package
   tags:
