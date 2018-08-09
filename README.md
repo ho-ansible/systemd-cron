@@ -4,7 +4,10 @@ Enable systemd generator that translates cron jobs to systemd timers.
 ## Requirements
 Only tested on Debian stable, for now.
 
+Removes all other crons.
+
 ## Role Variables
+None
 
 ## Dependencies
 None.
