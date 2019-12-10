@@ -10,15 +10,7 @@ Removes all other crons.
 None
 
 ## Dependencies
-None.
-
-## Example Playbook
-
-```
-- hosts: all
-  roles:
-    - { role: ho-ansible.systemd-cron }
-```
++ [ho-ansible.systemd](https://github.com/ho-ansible/systemd)
 
 ## License
 + This ansible role is licensed [MIT](LICENSE).

@@ -45,4 +45,4 @@
     name: cron.target
     state: started
     enabled: yes
-    daemon_reload: yes
+  notify: daemon-reload

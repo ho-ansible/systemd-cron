@@ -18,5 +18,6 @@ galaxy_info:
     - systemd
     - timer
 
-dependencies: []
+dependencies:
+  - role: systemd
 
