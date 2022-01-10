@@ -1,6 +1,12 @@
 ---
 
-- name: systemd-cron | remove standard cron
+- name: systemd-cron | package
+  tags:
+  - package
+  package:
+    name: systemd-cron
+
+- name: systemd-cron | remove other crons
   tags:
   - package
   package:
@@ -11,12 +17,6 @@
     - mcron
     - anacron
     - at
-
-- name: systemd-cron | package
-  tags:
-  - package
-  package:
-    name: systemd-cron
 
 - name: systemd-cron | cron.target
   tags:

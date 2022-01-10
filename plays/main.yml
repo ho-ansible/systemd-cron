@@ -1,0 +1,9 @@
+#! /usr/bin/env ansible-playbook
+# Configure cron timers
+---
+- name: systemd-cron | periodic jobs
+  hosts: linux
+  roles:
+  - role: systemd-cron
+    tags:
+    - cron
