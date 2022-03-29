@@ -1,9 +1,11 @@
 #! /usr/bin/env ansible-playbook
-# Configure cron timers
+# Configure generator that parses crontab entries into systemd timer units
+# Replace with your own inventory group
 ---
 - name: systemd-cron | periodic jobs
   hosts: linux
   roles:
   - role: systemd-cron
     tags:
+    - systemd-cron
     - cron
